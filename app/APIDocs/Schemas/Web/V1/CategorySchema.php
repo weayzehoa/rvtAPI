@@ -64,13 +64,13 @@ class Category
     /**
      * 分類Logo圖片
      * @var string
-     * @OA\Property(format="string", example="https://dev-cdn.icarry.me/upload/category/logo_1.jpg")
+     * @OA\Property(format="string", example="https://api.rvt.idv.tw/upload/category/logo_1.jpg")
      */
     public $logo;
     /**
      * 分類封面圖片
      * @var string
-     * @OA\Property(format="string", example="https://dev-cdn.icarry.me/upload/category/cover_1_1490589933.jpg")
+     * @OA\Property(format="string", example="https://api.rvt.idv.tw/upload/category/cover_1_1490589933.jpg")
      */
     public $cover;
     /**

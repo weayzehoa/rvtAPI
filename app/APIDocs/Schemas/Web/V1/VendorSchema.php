@@ -58,19 +58,19 @@ class VendorData
     /**
      * 商家Logo圖片
      * @var string
-     * @OA\Property(format="string", example="https://dev-cdn.icarry.me/oldpic/vendor/logo_236.png")
+     * @OA\Property(format="string", example="https://dev-cdn.rvt.idv.tw/oldpic/vendor/logo_236.png")
      */
     public $img_logo;
     /**
      * 商家主視覺圖片
      * @var string
-     * @OA\Property(format="string", example="https://dev-cdn.icarry.me/upload/vendor/site_cover_20_1491487607.png")
+     * @OA\Property(format="string", example="https://dev-cdn.rvt.idv.tw/upload/vendor/site_cover_20_1491487607.png")
      */
     public $img_cover;
     /**
      * 商家網站滿版圖
      * @var string
-     * @OA\Property(format="string", example="https://dev-cdn.icarry.me/upload/vendor/site_cover_20_1491487607.png")
+     * @OA\Property(format="string", example="https://dev-cdn.rvt.idv.tw/upload/vendor/site_cover_20_1491487607.png")
      */
     public $img_site;
     /**
@@ -159,7 +159,7 @@ class ProductsData
     /**
      * 圖片資料
      * @var string
-     * @OA\Property(format="string", example="https://dev-cdn.icarry.me/upload/product/photo1_3654_1564738620.png://dev-cdn.icarry.me/upload/product/photo1_3654_1564738620.png34")
+     * @OA\Property(format="string", example="https://dev-cdn.rvt.idv.tw/upload/product/photo1_3654_1564738620.png://dev-cdn.rvt.idv.tw/upload/product/photo1_3654_1564738620.png34")
      */
     public $image;
 }

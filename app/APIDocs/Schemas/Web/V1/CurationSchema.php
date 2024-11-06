@@ -106,7 +106,7 @@ class Curation
     /**
      * 策展版型背景圖片
      * @var string
-     * @OA\Property(format="string", example="https://dev-cdn.icarry.me/upload/curation/background_image_1_1620880149.png")
+     * @OA\Property(format="string", example="https://api.rvt.idv.tw/upload/curation/background_image_1_1620880149.png")
      */
     public $background_image;
     /**
@@ -142,7 +142,7 @@ class Curation
     /**
      * 連結
      * @var string
-     * @OA\Property(format="string", example="https://icarry.me")
+     * @OA\Property(format="string", example="https://api.rvt.idv.tw")
      */
     public $url;
     /**
@@ -303,7 +303,7 @@ class CurationProducts
     /**
      * 圖片資料
      * @var string
-     * @OA\Property(format="string", example="https://dev-cdn.icarry.me/upload/Product/photo_48_1572847556.jpg")
+     * @OA\Property(format="string", example="https://api.rvt.idv.tw/upload/Product/photo_48_1572847556.jpg")
      */
     public $image;
 }
@@ -421,7 +421,7 @@ class CurationImages
     /**
      * 連結
      * @var string
-     * @OA\Property(format="string", example="https://icarry.me")
+     * @OA\Property(format="string", example="https://api.rvt.idv.tw")
      */
     public $url;
     /**
@@ -445,7 +445,7 @@ class CurationImages
     /**
      * 策展版型背景圖片
      * @var string
-     * @OA\Property(format="string", example="https://dev-cdn.icarry.me/upload/curation/photo_48_1572847556.jpg")
+     * @OA\Property(format="string", example="https://api.rvt.idv.tw/upload/curation/photo_48_1572847556.jpg")
      */
     public $image;
     /**
@@ -486,13 +486,13 @@ class CurationnowordBlocks
     /**
      * 連結
      * @var string
-     * @OA\Property(format="string", example="https://icarry.me")
+     * @OA\Property(format="string", example="https://api.rvt.idv.tw")
      */
     public $url;
     /**
      * 策展版型背景圖片
      * @var string
-     * @OA\Property(format="string", example="https://dev-cdn.icarry.me/upload/curation/photo_48_1572847556.jpg")
+     * @OA\Property(format="string", example="https://api.rvt.idv.tw/upload/curation/photo_48_1572847556.jpg")
      */
     public $image;
     /**

@@ -85,7 +85,7 @@ class shoppingCartAmountUserData
     /**
      * 名字
      * @var string
-     * @OA\Property(format="string", example="iCarry Me")
+     * @OA\Property(format="string", example="roger Me")
      */
     public $name;
     /**
@@ -103,7 +103,7 @@ class shoppingCartAmountUserData
     /**
      * 電子郵件
      * @var string
-     * @OA\Property(format="string", example="icarry@icarry.me")
+     * @OA\Property(format="string", example="roger@rvt.idv.tw")
      */
     public $email;
     /**
@@ -121,7 +121,7 @@ class shoppingCartAmountUserData
     /**
      * 其他聯絡資訊
      * @var string
-     * @OA\Property(format="string", example="line:icarry")
+     * @OA\Property(format="string", example="line:roger")
      */
     public $other_contact;
 }
@@ -143,7 +143,7 @@ class shoppingCartAmountUserAddress
     /**
      * 名字
      * @var string
-     * @OA\Property(format="string", example="iCarry Me")
+     * @OA\Property(format="string", example="roger Me")
      */
     public $name;
     /**
@@ -649,7 +649,7 @@ class shippingCartUpdateData
     /**
      * 網域
      * @var string
-     * @OA\Property(format="string", example="icarry.me")
+     * @OA\Property(format="string", example="rvt.idv.tw")
      */
     public $domain;
 }
@@ -754,7 +754,7 @@ class shoppingCartShowData
     /**
      * 商品圖片
      * @var string
-     * @OA\Property(format="string", example="https://dev-cdn.icarry.me/upload/Product/photo_48_1572847556.jpg")
+     * @OA\Property(format="string", example="https://dev-cdn.rvt.idv.tw/upload/Product/photo_48_1572847556.jpg")
      */
     public $images;
     /**

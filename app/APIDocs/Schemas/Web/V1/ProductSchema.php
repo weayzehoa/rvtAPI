@@ -88,31 +88,31 @@ class SearchKeyword
     /**
      * 商品圖片1
      * @var string
-     * @OA\Property(format="string", example="https://cdn.icarry.me/upload/product/new_photo1_2646_1571824006.jpg")
+     * @OA\Property(format="string", example="https://cdn.rvt.idv.tw/upload/product/new_photo1_2646_1571824006.jpg")
      */
     public $image1;
     /**
      * 商品圖片2
      * @var string
-     * @OA\Property(format="string", example="https://cdn.icarry.me/upload/product/new_photo1_2646_1571824006.jpg")
+     * @OA\Property(format="string", example="https://cdn.rvt.idv.tw/upload/product/new_photo1_2646_1571824006.jpg")
      */
     public $image2;
     /**
      * 商品圖片3
      * @var string
-     * @OA\Property(format="string", example="https://cdn.icarry.me/upload/product/new_photo1_2646_1571824006.jpg")
+     * @OA\Property(format="string", example="https://cdn.rvt.idv.tw/upload/product/new_photo1_2646_1571824006.jpg")
      */
     public $image3;
     /**
      * 商品圖片4
      * @var string
-     * @OA\Property(format="string", example="https://cdn.icarry.me/upload/product/new_photo1_2646_1571824006.jpg")
+     * @OA\Property(format="string", example="https://cdn.rvt.idv.tw/upload/product/new_photo1_2646_1571824006.jpg")
      */
     public $image4;
     /**
      * 商品圖片5
      * @var string
-     * @OA\Property(format="string", example="https://cdn.icarry.me/upload/product/new_photo1_2646_1571824006.jpg")
+     * @OA\Property(format="string", example="https://cdn.rvt.idv.tw/upload/product/new_photo1_2646_1571824006.jpg")
      */
     public $image5;
     /**
@@ -461,7 +461,7 @@ class ProductImages
     /**
      * 商品圖片
      * @var string
-     * @OA\Property(format="string", example="https://dev-cdn.icarry.me/upload/Product/photo_48_1572847556.jpg")
+     * @OA\Property(format="string", example="https://dev-cdn.rvt.idv.tw/upload/Product/photo_48_1572847556.jpg")
      */
     public $filename;
     /**
@@ -520,7 +520,7 @@ class vendorHotProducts
     /**
      * 商品圖片
      * @var string
-     * @OA\Property(format="string", example="https://dev-cdn.icarry.me/upload/Product/photo_48_1572847556.jpg")
+     * @OA\Property(format="string", example="https://dev-cdn.rvt.idv.tw/upload/Product/photo_48_1572847556.jpg")
      */
     public $image;
 }

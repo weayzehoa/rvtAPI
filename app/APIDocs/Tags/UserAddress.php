@@ -80,7 +80,7 @@
      *                     property="email",
      *                     description="電子郵件 (email 驗證, string max:255)",
      *                     type="string",
-     *                     example="icarry@icarry.me",
+     *                     example="roger@rvt.idv.tw",
      *                 ),
      *                 @OA\Property(
      *                     property="country",
@@ -185,7 +185,7 @@
      *                     property="email",
      *                     description="電子郵件 (email 驗證, string max:255)",
      *                     type="string",
-     *                     example="icarry@icarry.me",
+     *                     example="roger@rvt.idv.tw",
      *                 ),
      *                 @OA\Property(
      *                     property="country",

@@ -70,7 +70,7 @@ class PayMethod
     /**
      * 圖片
      * @var string
-     * @OA\Property(format="string", example="https://dev-cdn.icarry.me/upload/category/logo_1.jpg")
+     * @OA\Property(format="string", example="https://dev-cdn.rvt.idv.tw/upload/category/logo_1.jpg")
      */
     public $image;
 }

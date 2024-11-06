@@ -101,7 +101,7 @@ class OrderListSuccess
     /**
      * 收件者名字
      * @var string
-     * @OA\Property(format="string", example="iCarry")
+     * @OA\Property(format="string", example="roger")
      */
     public $receiver_name;
     /**
@@ -250,7 +250,7 @@ class OrderListSuccess
     /**
      * 收件者名字
      * @var string
-     * @OA\Property(format="string", example="iCarry")
+     * @OA\Property(format="string", example="roger")
      */
     public $receiver_name;
     /**
@@ -262,7 +262,7 @@ class OrderListSuccess
     /**
      * 收件者電子郵件
      * @var string
-     * @OA\Property(format="string", example="icarry@icarry.me")
+     * @OA\Property(format="string", example="roger@rvt.idv.tw")
      */
     public $receiver_email;
     /**
@@ -465,7 +465,7 @@ class OrderListSuccess
     /**
      * 運送單號查詢網址
      * @var string
-     * @OA\Property(format="integer", example="https://api.icarry.me/shipping_vendor_query.php?vendor=tpe&no=878070725560")
+     * @OA\Property(format="integer", example="https://api.rvt.idv.tw/shipping_vendor_query.php?vendor=tpe&no=878070725560")
      */
     public $check_url;
 }
@@ -518,7 +518,7 @@ class OrderListSuccess
     /**
      * 商品照片
      * @var integer
-     * @OA\Property(format="integer", example="ttps://dev-cdn.icarry.me/upload/product/photo1_2638_1588751006.png")
+     * @OA\Property(format="integer", example="ttps://dev-cdn.rvt.idv.tw/upload/product/photo1_2638_1588751006.png")
      */
     public $image;
 }

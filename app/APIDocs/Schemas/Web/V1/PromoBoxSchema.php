@@ -52,7 +52,7 @@ class PromoBox
     /**
      * 活動標題
      * @var string
-     * @OA\Property(format="string", example="台灣Pay，送禮 iCarry U")
+     * @OA\Property(format="string", example="台灣Pay，送禮 roger U")
      */
     public $title;
     /**
@@ -70,7 +70,7 @@ class PromoBox
     /**
      * 圖片
      * @var string
-     * @OA\Property(format="string", example="https://dev-cdn.icarry.me/upload/category/cover_1_1490589933.jpg")
+     * @OA\Property(format="string", example="https://dev-cdn.rvt.idv.tw/upload/category/cover_1_1490589933.jpg")
      */
     public $image;
 }

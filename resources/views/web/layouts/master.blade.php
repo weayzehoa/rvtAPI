@@ -4,7 +4,7 @@
     @include('web.layouts.meta')
     @yield('meta')
 
-    <title>iCarry 測試站台 - @yield('title')</title>
+    <title>Roger 測試站台 - @yield('title')</title>
 
     @include('web.layouts.css')
     @yield('css')

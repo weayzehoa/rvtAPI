@@ -5,7 +5,7 @@
      *     operationId="webOrderList",
      *     tags={"訂單"},
      *     summary="前台-使用者訂單資料列表",
-     *     description="1. 必須登入帶 Authorization Header，合作廠商未使用登入方式則須帶 partner_id、verify、icarry_uid 參數。
+     *     description="1. 必須登入帶 Authorization Header，合作廠商未使用登入方式則須帶 partner_id、verify、roger_uid 參數。
 2. lang 參數 取得相對應語言資料。
 3. 訂單狀態代碼說明 (-1 已刪除[前台不顯示訂單]、0 尚未付款、1 已付款、2 集貨中、3 已出貨、4 已完成)",
      *     @OA\Parameter(
@@ -41,7 +41,7 @@
      *     operationId="webOrderShow",
      *     tags={"訂單"},
      *     summary="前台-使用者訂單資料",
-     *     description="1. 必須登入帶 Authorization Header，合作廠商未使用登入方式則須帶 partner_id、verify、icarry_uid 參數。
+     *     description="1. 必須登入帶 Authorization Header，合作廠商未使用登入方式則須帶 partner_id、verify、roger_uid 參數。
 2. lang 參數 取得相對應語言資料。
 3. 訂單狀態代碼說明 (-1 已刪除[前台不顯示訂單]、0 尚未付款、1 已付款、2 集貨中、3 已出貨、4 已完成)",
      *     @OA\Parameter(
@@ -77,12 +77,12 @@
      *     tags={"訂單"},
      *     summary="前台-使用者訂單新增",
      *     description="前台-訂單新增 [(流程圖)](/flowchart/webOrder_Post.png)
-1. 必須登入帶 Authorization Header，合作廠商未使用登入方式則須帶 partner_id、verify、icarry_uid 參數。(測試機已綁定 使用者id 84533 忽略 Authorization。)
-2. domain 必填， iCarry.me 官網請填 icarry.me，合作廠商請填來源 domain。
+1. 必須登入帶 Authorization Header，合作廠商未使用登入方式則須帶 partner_id、verify、roger_uid 參數。(測試機已綁定 使用者id 84533 忽略 Authorization。)
+2. domain 必填， rvt.idv.tw 官網請填 rvt.idv.tw，合作廠商請填來源 domain。
 3. from_country_id (發貨國家id，目前僅提供 1 台灣發貨 5 日本發貨 ) 與 to_country_id (目的地國家id) 必填，請先從 國家資料API 取得相對應的國家資料。
 4. shipping_method_id (寄送方式id) 必填，請先從 寄送方式API 取得相對應的寄送方式資料。
 5. pay_method (付款方式) 必填，請先從 付款方式API 取得相對應啟用的付款方式資料，合作廠商免填。
-6. create_type 必填， 若為 icarry 官網請填 web， icarry APP 請填 app， 合作廠商請填自己的名稱 ex: 17Life。
+6. create_type 必填， 若為 roger 官網請填 web， roger APP 請填 app， 合作廠商請填自己的名稱 ex: 17Life。
 7. buyer_name (購買者姓名） 與 buyer_email (購買者電子郵件) 必填，請先從 使用者API 取得相對應的使用者資料。
 8. invoice_sub_type (發票資訊) 必填， 1 捐贈 2 個人 3 公司。
 9. 當 to_country_id = 2 (中國), agree 必填， 同意中國實名制收件人需上傳身分證正反面。當 to_country_id = 6 (韓國), receiver_birthday 必填，韓國政府要求收件人生日八碼。
@@ -93,14 +93,14 @@
 14. 當 invoice_sub_type = 2 (個人)， carrier_type 與 carrier_num 可填選， carrier_type = 1 或 2 時 carrier_num 必填。
 15. 當 invoice_sub_type = 3 (公司)， invoice_title 與 invoice_number 必填。
 16. 其餘欄位參數選填。
-17. 注意：本文件測試付款方式請填 (購物金) 忽略金流流程，否則將產生COSR錯誤訊息。測試金流請至：[https://dev.icarry.me/payTest](https://dev.icarry.me/payTest) 網頁測試。",
+17. 注意：本文件測試付款方式請填 (購物金) 忽略金流流程，否則將產生COSR錯誤訊息。測試金流請至：[https://dev.rvt.idv.tw/payTest](https://dev.rvt.idv.tw/payTest) 網頁測試。",
      *     @OA\Parameter(
      *         name="domain",
      *         description="domain",
      *         required=true,
      *         in="query",
      *         @OA\Schema(type="string"),
-     *         example="icarry.me",
+     *         example="rvt.idv.tw",
      *     ),
      *     @OA\Parameter(
      *         name="from_country_id",
@@ -283,7 +283,7 @@
      *         required=false,
      *         in="query",
      *         @OA\Schema(type="string"),
-     *         example="iCarry",
+     *         example="roger",
      *     ),
      *     @OA\Parameter(
      *         name="receiver_email",
@@ -291,7 +291,7 @@
      *         required=false,
      *         in="query",
      *         @OA\Schema(type="string"),
-     *         example="iCarry@icarry.me",
+     *         example="roger@rvt.idv.tw",
      *     ),
      *     @OA\Parameter(
      *         name="receiver_nation_number",
@@ -395,7 +395,7 @@
      *     security={{"webAuth": {}}},
      *     deprecated=true,
      *     summary="前台-使用者訂單更新 (重新付款、完成訂單)",
-     *     description="必須登入帶 Authorization Header，合作廠商未使用登入方式則須帶 partner_id、verify、icarry_uid 參數。
+     *     description="必須登入帶 Authorization Header，合作廠商未使用登入方式則須帶 partner_id、verify、roger_uid 參數。
 1. type = repay 重新付款，必須提供付款方式 pay_method，付款方式 value 請透過 付款方式API 取得可用的付款方式資料。
 2. type = finished 完成訂單，此為舊站功能。
 3. 注意，重新付款可能會導引到金流頁面。",
@@ -436,7 +436,7 @@
      *     operationId="webOrderDelete",
      *     tags={"訂單"},
      *     summary="前台-使用者訂單刪除",
-     *     description="1. 必須登入帶 Authorization Header，合作廠商未使用登入方式則須帶 partner_id、verify、icarry_uid 參數。
+     *     description="1. 必須登入帶 Authorization Header，合作廠商未使用登入方式則須帶 partner_id、verify、roger_uid 參數。
 2. 只有訂單狀態為 0 才可以刪除，其餘狀態只能透過管理者從後台取消。
 3. 訂單狀態代碼說明 (-1 已刪除[前台不顯示訂單]、0 尚未付款、1 已付款、2 集貨中、3 已出貨、4 已完成)",
      *     @OA\Parameter(
@@ -458,8 +458,8 @@
      *     tags={"訂單"},
      *     summary="前台-使用者訂單再買一次",
      *     description="前台-使用者訂單再買一次將訂單商品內重新加入購物車
-1. 必須登入帶 Authorization Header，合作廠商未使用登入方式則須帶 partner_id、verify、icarry_uid 參數。
-2. domain 為 icarry.me 則 session 及 domain 必填。",
+1. 必須登入帶 Authorization Header，合作廠商未使用登入方式則須帶 partner_id、verify、roger_uid 參數。
+2. domain 為 rvt.idv.tw 則 session 及 domain 必填。",
      *     @OA\Parameter(
      *         name="id",
      *         description="訂單id",
@@ -473,7 +473,7 @@
      *         required=true,
      *         in="query",
      *         @OA\Schema(type="string"),
-     *                 example="icarry.me"
+     *                 example="rvt.idv.tw"
      *     ),
      *     @OA\Parameter(
      *         name="session",

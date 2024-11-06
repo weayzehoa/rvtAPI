@@ -1,7 +1,7 @@
 <nav id="topbar" class="main-header navbar navbar-expand navbar-dark bg-navy">
     <a href="javascript:" title="側邊選單" class="nav-link" data-widget="pushmenu" role="button"><i class="fas fa-bars"></i></a>
     <a href="{{ route('index') }}" class="navbar-brand">
-        <span class="brand-text font-weight-light">iCarry 開發團隊用測試站台</span>
+        <span class="brand-text font-weight-light">Roger 開發團隊用測試站台</span>
     </a>
         <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

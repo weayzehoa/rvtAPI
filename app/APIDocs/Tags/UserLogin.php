@@ -163,7 +163,7 @@
      *         required=true,
      *         in="query",
      *         @OA\Schema(type="string"),
-     *         example="icarry",
+     *         example="roger",
      *     ),
      *     @OA\Response(
      *         response=200,

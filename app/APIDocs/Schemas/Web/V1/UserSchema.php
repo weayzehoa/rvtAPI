@@ -70,7 +70,7 @@ class User
     /**
      * 電子郵件 (type = profile 顯示)
      * @var string
-     * @OA\Property(format="string", example="icarry@icarry.me")
+     * @OA\Property(format="string", example="roger@rvt.idv.tw")
      */
     public $email;
     /**
@@ -177,7 +177,7 @@ class userFavoriteProducts
     /**
      * 商品照片
      * @var integer
-     * @OA\Property(format="integer", example="ttps://dev-cdn.icarry.me/upload/product/photo1_2638_1588751006.png")
+     * @OA\Property(format="integer", example="ttps://dev-cdn.rvt.idv.tw/upload/product/photo1_2638_1588751006.png")
      */
     public $image;
 }
@@ -289,7 +289,7 @@ class userOrders
     /**
      * 收件者名字
      * @var string
-     * @OA\Property(format="string", example="iCarry")
+     * @OA\Property(format="string", example="roger")
      */
     public $receiver_name;
     /**
@@ -329,7 +329,7 @@ class itemsImage
     /**
      * 商品照片
      * @var integer
-     * @OA\Property(format="integer", example="ttps://dev-cdn.icarry.me/upload/product/photo1_2638_1588751006.png")
+     * @OA\Property(format="integer", example="ttps://dev-cdn.rvt.idv.tw/upload/product/photo1_2638_1588751006.png")
      */
     public $image;
 }
