@@ -1,0 +1,57 @@
+<?php
+    /**
+     * @OA\Get(
+     *     path="/web/v1/receiverBase",
+     *     operationId="webReceiverBaseList",
+     *     tags={"提貨日資料"},
+     *     summary="前台-提貨日資料列表",
+     *     description="1. 未輸入任何參數以目前年份月份會取得提貨日資料。
+2. 輸入 year 參數可取得相對年份資料。
+3. 輸入 month 參數可取得相對月份資料。",
+     *     @OA\Parameter(
+     *         name="year",
+     *         description="年份 (2021-2032)",
+     *         required=false,
+     *         in="query",
+     *         @OA\Schema(type="integer"),
+     *         @OA\Examples(example="", value="", summary="今年"),
+     *         @OA\Examples(example="2021", value="2021", summary="2021 年"),
+     *         @OA\Examples(example="2022", value="2022", summary="2022 年"),
+     *         @OA\Examples(example="2023", value="2023", summary="2023 年"),
+     *         @OA\Examples(example="2024", value="2024", summary="2024 年"),
+     *         @OA\Examples(example="2025", value="2025", summary="2025 年"),
+     *         @OA\Examples(example="2026", value="2026", summary="2026 年"),
+     *         @OA\Examples(example="2027", value="2027", summary="2027 年"),
+     *         @OA\Examples(example="2028", value="2028", summary="2028 年"),
+     *         @OA\Examples(example="2029", value="2029", summary="2029 年"),
+     *         @OA\Examples(example="2030", value="2030", summary="2030 年"),
+     *         @OA\Examples(example="2031", value="2031", summary="2031 年"),
+     *         @OA\Examples(example="2032", value="2032", summary="2032 年"),
+     *     ),
+     *     @OA\Parameter(
+     *         name="month",
+     *         description="月份 (1-12)",
+     *         required=false,
+     *         in="query",
+     *         @OA\Schema(type="integer"),
+     *         @OA\Examples(example="", value="", summary="本月"),
+     *         @OA\Examples(example="1", value="1", summary="1月"),
+     *         @OA\Examples(example="2", value="2", summary="2月"),
+     *         @OA\Examples(example="3", value="3", summary="3月"),
+     *         @OA\Examples(example="4", value="4", summary="4月"),
+     *         @OA\Examples(example="5", value="5", summary="5月"),
+     *         @OA\Examples(example="6", value="6", summary="6月"),
+     *         @OA\Examples(example="7", value="7", summary="7月"),
+     *         @OA\Examples(example="8", value="8", summary="8月"),
+     *         @OA\Examples(example="9", value="9", summary="9月"),
+     *         @OA\Examples(example="10", value="10", summary="10月"),
+     *         @OA\Examples(example="11", value="11", summary="11月"),
+     *         @OA\Examples(example="12", value="12", summary="12月"),
+     *     ),
+     *     @OA\Response(response=200,
+     *         description="Success, 取得提貨日資料列表",
+     *          @OA\JsonContent(ref="#/components/schemas/ReceiverBaseSuccess")
+     *     ),
+     *     @OA\Response(response=400,description="Failure, 參數不存在/參數錯誤"),
+    * )
+    */
